@@ -1,0 +1,38 @@
+@media only screen and (min-width: 992px) {
+  header {
+    height: 100vh;
+  }
+  .what-we-offer {
+    display: flex;
+    flex-direction: row;
+  }
+  .what-we-offer > div {
+    width: 25%;
+  }
+  .portfolio-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 80%;
+  }
+  .portfolio-1 {
+    width: 50%;
+    height: 360px;
+    margin: 0;
+}
+  .portfolio-2 {
+    width: 50%;
+    height: 360px;
+    margin: 0;
+}
+  .portfolio-3 {
+    width: 50%;
+    height: 360px;
+    margin: 0;
+}
+  .portfolio-4 {
+    width: 50%;
+    height: 360px;
+    margin: 0;
+  }
+}

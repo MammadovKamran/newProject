@@ -1,0 +1,62 @@
+@media only screen and (min-width: 975px) {
+  #home-header {
+    height: 65vh;
+  }
+  #about-header {
+    height: 65vh;
+  }
+  #contact-header {
+    height: 65vh;
+  }
+
+  header nav {
+    background: transparent;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  header .nav-menu {
+    display: none;
+  }
+  nav > a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 800;
+  }
+  nav ul li a:hover {
+    cursor: pointer;
+    color: #c7c7c7;
+  }
+  #section-1 {
+    padding-left: 18%;
+  }
+  .about-container {
+    width: 60%;
+  }
+  .contact-section {
+    margin-left: 50px;
+  }
+  .contact-container h5 {
+    width: 62%;
+  }
+  #blog-header > h1 {
+    width: 55%;
+    font-weight: 800;
+  }
+  .blog-container {
+    width: 50%;
+    margin: 50px auto;
+  }
+}

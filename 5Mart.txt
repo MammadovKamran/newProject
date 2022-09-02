@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <script>
+      function a(x) {
+        alert(1);
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <script>
+      function a(event) {
+        alert(1);
+      }
+    </script>
+  </body>
+</html>
+-----------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <script>
+      function a(x) {
+        var a = x.keyCode;
+        alert(a);
+      }
+    </script>
+  </body>
+</html>
+-----------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <script>
+      function a(x) {
+        var a = x.keyCode;
+        if (a == 13) {
+          alert("enter");
+        }
+      }
+    </script>
+  </body>
+</html>
+---------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <input type="text" />
+    <button id="button" onclick="alert(1);">Ok</button>
+    <script>
+      function a(x) {
+        var a = x.keyCode;
+        if (a == 13) {
+          document.getElementById("button").click();
+        }
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <input type="text" />
+    <button id="button" onclick="alert(1);">Ok</button>
+    <script>
+      function a(x) {
+        var a = x.keyCode;
+        if (a == 27) {
+          window.close();
+        }
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <img
+      id="c"
+      src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Animated-eagle-image-0036.gif"
+    />
+
+    <style>
+      body {
+        background-image: url("https://i.ytimg.com/vi/5WA2DSCA2BU/maxresdefault.jpg");
+        background-size: cover;
+      }
+    </style>
+    <script>
+      var l = 0;
+      function a(x) {
+        var a = x.keyCode;
+        if (a == 39) {
+          l = l + 10;
+
+          document.getElementById("c").style.marginLeft = l + "px";
+        }
+      }
+    </script>
+  </body>
+</html>
+------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <img
+      id="c"
+      src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Animated-eagle-image-0036.gif"
+    />
+
+    <style>
+      body {
+        background-image: url("https://i.ytimg.com/vi/5WA2DSCA2BU/maxresdefault.jpg");
+        background-size: cover;
+      }
+    </style>
+    <script>
+      var l = 0;
+      function a(x) {
+        var a = x.keyCode;
+        if (a == 39) {
+          l = l + 10;
+
+          document.getElementById("c").style.marginLeft = l + "px";
+        }
+        if (a == 37) {
+          l = l - 10;
+
+          document.getElementById("c").style.marginLeft = l + "px";
+        }
+      }
+    </script>
+  </body>
+</html>
+--------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <img
+      id="c"
+      src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Animated-eagle-image-0036.gif"
+    />
+
+    <style>
+      body {
+        background-image: url("https://i.ytimg.com/vi/5WA2DSCA2BU/maxresdefault.jpg");
+        background-size: cover;
+      }
+    </style>
+    <script>
+      var l = 0;
+      function a(x) {
+        var a = x.keyCode;
+        if (a == 39) {
+          l = l + 10;
+
+          document.getElementById("c").style.marginLeft = l + "px";
+          document.getElementById("c").style.transform = "scaleX(1)";
+        }
+        if (a == 37) {
+          l = l - 10;
+
+          document.getElementById("c").style.marginLeft = l + "px";
+          document.getElementById("c").style.transform = "scaleX(-1)";
+        }
+      }
+    </script>
+  </body>
+-----------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body onkeydown="a(event)">
+    <img
+      id="c"
+      src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Animated-eagle-image-0036.gif"
+    />
+
+    <style>
+      body {
+        background-image: url("https://i.ytimg.com/vi/5WA2DSCA2BU/maxresdefault.jpg");
+        background-size: cover;
+      }
+    </style>
+    <script>
+      var t = 0;
+      var l = 0;
+      function a(x) {
+        var a = x.keyCode;
+
+        if (a == 39) {
+          l = l + 10;
+
+          document.getElementById("c").style.marginLeft = l + "px";
+          document.getElementById("c").style.transform = "scaleX(1)";
+        }
+        if (a == 37) {
+          l = l - 10;
+
+          document.getElementById("c").style.marginLeft = l + "px";
+          document.getElementById("c").style.transform = "scaleX(-1)";
+        }
+        if (a == 40) {
+          t = t + 10;
+          document.getElementById("c").style.marginTop = t + "px";
+        }
+        if (a == 38) {
+          t = t - 10;
+          document.getElementById("c").style.marginTop = t + "px";
+        }
+      }
+    </script>
+  </body>
+</html>
+--------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

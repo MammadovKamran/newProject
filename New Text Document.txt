@@ -1,0 +1,64 @@
+ 1) Array-dəki dəyərləri bu formada dövr ilə çıxarmaq: BMW - Fiat - Mercedez - Audi - Opel - Bentley
+// ["BMW", "Fiat", "Mercedez", "Audi", "Opel", "Bentley"]
+
+ 3) Reqemlerden ibaret verilmis array-in en boyuk reqemini tapib, diger butun reqemleri onunla evezlemek
+// meselen: [12, 10, 3] => [12, 12, 12]
+//     [10, 3, 29, 15] => [29, 29, 29, 29]
+
+3) Reqemlerden ibaret verilmis array-in icinde 1 ve ya 3 reqeminin olmasini dövr ilə yoxlamaq. true ve ya false qaytarmaq
+// meselen: [7, 8] => false
+//     [9, 3, 7, 8] => true
+
+4) Reqemlerden ibaret verilmis array-in icinde 1 ve ya 3 reqeminin olMAMAsini yoxlamaq. true ve ya false qaytarmaq
+// meselen: [7, 8] => true
+//     [9, 3, 7, 8] => false
+
+
+ 8) Verilmiş array-ın verilmiş index-dəki elementini console-da göstərmək. Dövr ilə
+// Məsələn: [10,20,30,40,50,60,70], 4 => 50
+
+ 8) Verilmiş array-in içində tək və cüt rəqəmləri ayrılıqda toplayıb, birləşdirmək
+// Məsələn: [1, 2, 3, 4, 5] => tək (1+3+5) + cüt(2+4) = 96
+
+6) Verilmiş rəqəmin ədədlərini tək-tək toplamaq(сложить).
+// Məsələn: 555 => 15, 51 => 6, 1234 => 10
+
+
+
+
+
+
+
+
+
+
+ 2) (Loop) Verilmiş sözün hərflərini Azərbaycan əlifbasında ondan sonra gələn hərflə əvəzləmək.
+// Məsələn: ace => bçə
+
+
+
+ 4) Verilmiş rəqəmin tam(целая) və kəsr(дробь) hissəsinə(часть) ayırıb, toplamaq(сложить). Yalnız dövr, if/else-dən istifadə edərək yazmaq lazımdır, hazır method-lar OLMAZ
+// Məsələn: 1.7 => 8, 5.18 => 23, 10.5=> 15 58.5
+
+ 5) Verilmiş sözün son 3 hərfini dövrdən istifadə edərək kiçik hərflərlə yazmaq. 
+// Məsələn: SALAM => SAlam
+
+5) Reqemlerden ibaret verilmis array-in icinde axtarilan reqemin 2 defe olmasini yoxlamaq. true ve ya false qaytarmaq
+// meselen: [53, 90, 30, 21, 30] axtar 30 => true
+//     [53, 90, 21, 30] axtar 30 => false
+
+
+
+7) Verilmiş array-in içində ən uzun olan string-i tapmaq
+// Məsələn: [pro, p, proqr, pr, proqram, proq, proqra] => proqram
+
+
+
+12) Verilmiş sözdəki qoşa yazılmış hərfləri yazmaq
+// Məsələn: abbas => b, bass => s, abbas teyyarede => yb
+
+16) Verilmiş iki sözdən, birindən digərini yaratmaq olarmı deyə yoxlamaq. Olarsa true, əks halda false göstərsin.
+// Məsələn: lotto, otlot => true ||| pul, upl => true ||| salam, lasas => false
+
+15) Verilmiş array-in verilmiş rəqəmini verilmiş rəqəmlə dəyişdirmək.
+// Məsələn: [3,10,2,51,4, 643, 4, 11], 4, 222 => [3,10,2,51,222, 643, 222, 11]

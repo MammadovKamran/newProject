@@ -1,0 +1,249 @@
+script>
+      var sum = 0;
+      var a = 1;
+      while (a <= 5) {
+        sum = sum * a;
+        a++;
+      }
+      alert(sum);
+    </script>
+------------------------------------------------------------------------
+ <script>
+      var sum = 1;
+      var a = 5;
+      while (a <= 1) {
+        sum = sum * a;
+        a--;
+      }
+      alert(sum);
+    </script>
+---------------------------------------------------------------------------
+  <script>
+      var a = 0;
+      while (a < 4) {
+        if (a % 2 == 0) {
+          document.getElementsByTagName("tr")[a].style.backgroundColor = "red";
+        }
+        a++;
+      }
+    </script>
+-----------------------------------------------------------------------------
+  <body>
+    <table border="1">
+      <tr onclick="sil(this)">
+        <td class="a">1</td>
+      </tr>
+      <tr onclick="sil(this)">
+        <td class="a">2</td>
+      </tr>
+      <tr onclick="sil(this)">
+        <td class="a">3</td>
+      </tr>
+      <tr onclick="sil(this)">
+        <td class="a">4</td>
+      </tr>
+      <tr onclick="sil(this)">
+        <td class="a">5</td>
+      </tr>
+    </table>
+    <script>
+      function sil(x) {
+        x.remove();
+        var a = 0;
+        while (a < 5) {
+          document.getElementsByClassName("a")[a].innerHTML = a + 1;
+          a++;
+        }
+      }
+    </script>
+-------------------------------------------------------------------------
+  <body>
+    <div></div>
+    <style>
+      div {
+        animation: hereket 3s;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        position: absolute;
+        background-color: red;
+      }
+
+      @keyframes hereket {
+        from {
+          top: 0px;
+        }
+        to {
+          top: 200px;
+        }
+      }
+    </style>
+  
+  </body>
+----------------------------------------------------------------------
+<body>
+    <div></div>
+    <style>
+      div {
+          transition: all 3s;
+        animation: hereket 3s infinite;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        position: absolute;
+        background-color: red;
+      }
+      div:hover{
+          transform: rotate( 30deg);
+      }
+
+      @keyframes hereket {
+        from {
+          top: 0px; );
+        }
+        to {
+          top: 200px;
+        }
+      }
+    </style>
+  </body>
+---------------------------------------------------------
+  <body>
+    <div></div>
+    <style>
+      div {
+
+        animation: hereket 3s infinite;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        position: absolute;
+        background-color: red;
+      }
+
+      @keyframes hereket {
+        from {
+          top: 0px; transform: rotate(0deg));
+        }
+        to {
+          top: 200px;transform: rotate(360deg);
+        }
+      }
+    </style>
+  </body>
+-------------------------------------------------------------------
+  <body>
+    <div></div>
+    <style>
+      div {
+
+        animation: hereket 3s infinite;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        position: absolute;
+        background-color: red;
+      }
+
+      @keyframes hereket {
+        from {
+          top: 0px; transform: rotate(0deg );background-color: green;
+        }
+        to {
+          top: 200px;transform: rotate(360deg);background-color: red;
+        }
+      }
+    </style>
+  </body>
+--------------------------------------------------------------------
+   </head>
+  <body>
+    <div></div>
+    <style>
+      div {
+        animation: hereket 3s infinite;
+        width: 10px;
+        height: 200px;
+        left: 0;
+        position: absolute;
+        background-color: red;
+      }
+
+      @keyframes hereket {
+        from {
+          left: 0px;
+          transform: rotate(0deg);
+          background-color: green;
+        }
+        to {
+          left: 1000px;
+          transform: rotate(1080deg);
+          background-color: red;
+        }
+      }
+    </style>
+  </body>
+---------------------------------------------------------
+<body>
+    <div id="div" onclick="f()"></div>
+    <script>
+      function f() {
+        document.getElementById("div").style.animation = "hereket 3s";
+      }
+    </script>
+
+    <style>
+      div {
+        width: 10px;
+        height: 200px;
+        left: 0;
+        position: absolute;
+        background-color: red;
+      }
+
+      @keyframes hereket {
+        from {
+          left: 0px;
+          transform: rotate(0deg);
+          background-color: green;
+        }
+        to {
+          left: 1000px;
+          transform: rotate(1080deg);
+          background-color: red;
+        }
+      }
+    </style>
+  </body>
+------------------------------------------------------------------------
+  <body>
+    <div id="div" onclick="f()"></div>
+
+    <style>
+      div {
+        animation: hereket 60s ease infinite;
+        transform-origin: bottom;
+        width: 10px;
+        height: 200px;
+        left: 5000;
+        top: 200;
+        position: absolute;
+        background-color: red;
+      }
+
+      @keyframes hereket {
+        from {
+          left: 0px;
+          transform: rotate(0deg);
+          background-color: green;
+        }
+        to {
+          left: 1000px;
+          transform: rotate(1080deg);
+          background-color: red;
+        }
+      }
+    </style>
+-----------------------------------------------
+
+

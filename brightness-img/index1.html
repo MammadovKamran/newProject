@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        height: 100vh;
+      }
+      .bg-img {
+        background-image: url("./img/clement-duguerre-UlEi40vMty4-unsplash.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .bg-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="bg-img">
+        <input onchange="changeBrightness()" name="input" type="range" min="10" max="100" value="100" id="input" />
+      </div>
+      
+    </div>
+
+    <script>
+      function changeBrightness() {
+        var a = document.getElementById("input").value;
+
+        var b = document.getElementsByClassName("container")[0];
+        
+        b.style.filter = "brightness(" +a+ "%)";
+      }
+    </script>
+  </body>
+</html>

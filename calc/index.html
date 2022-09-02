@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 3px solid blue;
+        width: 500px;
+        height: 680px;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+      .row div {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border: 2px solid green;
+        font-size: 100px;
+        text-align: center;
+      }
+      .clear {
+        font-size: 100px;
+        color: white;
+        width: 418px;
+        height: 100px;
+        text-align: center;
+        background-color: red;
+      }
+      .input {
+        font-size: 100px;
+        color: white;
+        width: 410px;
+        height: 100px;
+        text-align: center;
+        background-color: red;
+        margin-bottom: 15px;
+      }
+    </style>
+    <div class="container">
+      <input type="text" class="input" />
+
+      <div class="row">
+        <div onclick="" id="num1">1</div>
+        <div onclick="" id="num2">2</div>
+        <div onclick="" id="num3">3</div>
+        <div onclick="" id="plus">+</div>
+      </div>
+      <div class="row">
+        <div id="num4">4</div>
+        <div id="num5">5</div>
+        <div id="num6">6</div>
+        <div id="minus">-</div>
+      </div>
+      <div class="row">
+        <div id="num7">7</div>
+        <div id="num8">8</div>
+        <div id="num9">9</div>
+        <div id="vurma">*</div>
+      </div>
+      <div class="row">
+        <div id="bolme">/</div>
+        <div id="num0">0</div>
+        <div id="dot">.</div>
+        <div id="beraber">=</div>
+      </div>
+
+      <div class="clear">Clear All</div>
+    </div>
+    <script>
+            function f (firstNum, secondNum,event){
+              var num0 = document.getElementById("num0")
+              var num1 = document.getElementById("num1")
+              var num2 = document.getElementById("num2")
+              var num3 = document.getElementById("num3")
+              var num4 = document.getElementById("num4")
+              var num5 = document.getElementById("num5")
+              var num6 = document.getElementById("num6")
+              var num7 = document.getElementById("num7")
+              var num8 = document.getElementById("num8")
+              var num9 = document.getElementById("num9")
+              var plus = document.getElementById("plus")
+              var beraber = document.getElementById("beraber")
+      var hesabla = firstNum + secondNum 
+
+
+
+            }
+    </script>
+  </body>
+</html>

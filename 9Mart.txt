@@ -1,0 +1,245 @@
+ <script>
+      var a=["1","salam","sagol"];
+      alert (a[0]);
+    </script>
+------------------------------------------------------------------------
+   <script>
+      var a = ["1", "salam", "sagol"];
+      a.push("Yeni element");
+      alert(a);
+    </script>
+-------------------------------------------------------------------
+<script>
+      var a = ["1", "salam", "sagol"];
+      a.push("Yeni element");
+ var a = ["1", "salam", "sagol","Yeni element"];
+      alert(a[3]);
+    </script>
+-------------------------------------------------------------------
+<script>
+      var a = ["1", "salam", "sagol"];
+      a.pop();
+      alert(a);
+    </script>
+------------------------------------------------------------------
+    <script>
+      var a = ["1", "salam", "sagol"];
+      var n = a.indexOf("salam");
+      alert(n);
+    </script>
+---------------------------------------------------------------------
+   <script>
+      //a[n]=b[n]
+      var a = ["hello", "apple"];
+      var b = ["salam", "alma"];
+      var n = a.indexOf("apple");
+      alert(b[n]);
+    </script>
+---------------------------------------------------------------------
+
+<script>
+      //a[n]=b[n]
+      var a = ["hello", "apple", "one"];
+      var b = ["salam", "alma", "bir"];
+      var c = prompt();
+      var n = a.indexOf(c);
+      alert(b[n]);
+    </script>
+-------------------------------------------------------------
+
+  <body>
+    <h1>Salam</h1>
+    <h1>Sagol</h1>
+    <script>
+      document.getElementsByTagName("h1")[0].style.color = "red";
+    </script>
+  </body>
+</html>
+-------------------------------------------------------
+ <body>
+    <h1 class="a">Salam</h1>
+    <h1 class="a">Sagol</h1>
+    <script>
+      document.getElementsByClassName("a")[1].style.color = "red";
+    </script>
+  </body>
+----------------------------------------------------------
+
+ <script>
+        var a=prompt();
+        if (a=="123"){
+            alert("ok");
+        }
+----------------------
+   <script>
+      var a = prompt();
+      while (a !== "123") {
+        a = prompt();
+      }
+      alert("ok");
+    </script>
+---------------------------------------------------
+  <script>
+      var a = prompt();
+      var b = prompt();
+      while (a !== "123" && b!=456) {
+        a = prompt();
+      }
+      alert("ok");
+    </script>
+----------------------------------------
+
+
+  <script>
+      var a = 0;
+
+      while (a < 10) {
+        document.write("salam<br>");
+        a++;
+      }
+    </script>
+---------------------------------------
+    <script>
+      var a = 0;
+
+      while (a < 10) {
+        document.write("Salam <br>");
+        a++;
+      }
+    </script>
+-------------------------------------------------------
+
+  <script>
+      var a = 0;
+
+      while (a < 100) {
+        document.write(a);
+        document.write("<br>");
+        a++;
+      }
+    </script>
+----------------------------------------------------------------
+  <script>
+      var a = 0;
+
+      while (a < 1000) {
+        if (a > 100) {
+          document.write(a);
+          document.write("<br>");
+        }
+        a++;
+      }
+    </script>
+------------------------------------------------------------------
+ <script>
+      var a = 4 % 2;
+      alert(a);
+    </script>
+---------------------------------------------------------------
+  <script>
+                  var a = 0;
+
+      while (a < 1000) {
+        if (a %2==0) {
+          document.write(a);                          cut ededler cixir
+          document.write("<br>");
+        }
+        a++;}
+    </script>
+--------------------------------------------------------
+
+<script>
+      var a = 0;
+
+      while (a < 1000) {
+        if (a % 2 == 1) {
+          document.write(a);                         tek ededler
+          document.write("<br>");
+        }
+        a++;
+      }
+    </script>
+----------------------------------------------------
+  <body>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+
+    <script>
+      var a = 0;
+
+      while (a < 4) {
+        document.getElementsByTagName("h1")[a].style.color = "red";
+
+        a++;
+      }
+    </script>
+  </body>
+-------------------------------------------------------------------
+  <body>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+
+    <script>
+      var a = 0;
+
+      while (a < 10) {
+        if (a % 2 == 0) {
+          document.getElementsByTagName("h1")[a].style.color = "red";
+        }
+
+        a++;
+      }
+    </script>
+  </body>
+---------------------------------------------------
+Tapsiriq
+1)1-den 1000-e qeder ededlerin siyahisi
+2)1-den 1000-e 	qeder cut ededlerin siyahisi
+3)1-den 10-a qeder ededlerin  cemi
+4)Cedvelin tek setirlerini qirmizi elemek
+5)Cedvelin tek setirlerini silmek
+6)Cedvele 10 eded yeni setir elave etmek
+7)Her defe duymeye basanda inputa yazilan eded arraya elave olunsun ve ekrana cixsin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

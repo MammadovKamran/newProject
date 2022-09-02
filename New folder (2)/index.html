@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      td {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(173, 210, 233);
+        font-size: 50px;
+      }
+    </style>
+    <table border="1">
+      <tr>
+        <td onclick="f(this)"></td>
+        <td onclick="f(this)"></td>
+        <td onclick="f(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="f(this)"></td>
+        <td onclick="f(this)"></td>
+        <td onclick="f(this)"></td>
+      </tr>
+      <tr>
+        <td onclick="f(this)"></td>
+        <td onclick="f(this)"></td>
+        <td onclick="f(this)"></td>
+      </tr>
+    </table>
+
+    <script>
+      var novbe = "x";
+
+      function f(x) {
+        if (novbe == "x" && x.innerHTML == "") {
+          x.innerHTML = "x";
+          novbe = "0";
+        } else if (novbe == "0" && x.innerHTML == "") {
+          x.innerHTML = "0";
+          novbe = "x";
+        } else if (x.innerHTML !== "") {
+          x.innerHTML = "";
+        }
+      }
+    </script>
+  </body>
+</html>

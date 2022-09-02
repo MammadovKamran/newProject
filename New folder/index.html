@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="input" />
+      <button id="btn" onclick="f()">ADD</button>
+    </div>
+    <ul id="list">
+      <li></li>
+      <li></li>
+    </ul>
+
+    <script>
+      function f() {
+        var a = document.getElementById("input").value;
+
+        if (a == "") {
+          alert("input bosdur");
+        } else {
+          document.getElementById("list").innerHTML += " <li>" + a + "</li>";
+        }
+      }
+    </script>
+  </body>
+</html>

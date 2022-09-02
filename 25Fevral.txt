@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="click" type="text" />
+    <button onclick="f()">Ok</button>
+    <script>
+      function f() {
+        var a = document.getElementById("click").value;
+
+        alert(a);
+      }
+    </script>
+  </body>
+</html>
+--------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="click1" type="text" />
+    <input id="click" type="text" />
+    <button onclick="f()">Ok</button>
+    <script>
+      function f() {
+        var a = document.getElementById("click").value;
+        var b = document.getElementById("click1").value;
+
+        alert(a * b);
+      }
+    </script>
+</body>
+</html>
+--------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="click1" type="text" />
+    <input id="click" type="text" />
+    <button onclick="f()">Ok</button>
+    <script>
+      function f() {
+        var a = document.getElementById("click").value * 1;
+        var b = document.getElementById("click1").value * 1;
+
+        alert(a + b);
+      }
+    </script>
+  </body>
+</html>
+-------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="click1" type="text" />
+    <input id="click" type="text" />
+    <button onclick="Topla()">Topla</button>
+    <button onclick="Cix()">Cix</button>
+    <button onclick="Vur()">Vur</button>
+    <button onclick="Bol()">Bol</button>
+    <script>
+      function Topla() {
+        var a = document.getElementById("click").value * 1;
+        var b = document.getElementById("click1").value * 1;
+
+        alert(a + b);
+      }
+      function Cix() {
+        var a = document.getElementById("click").value;
+        var b = document.getElementById("click1").value;
+
+        alert(a - b);
+      }
+      function Vur() {
+        var a = document.getElementById("click").value;
+        var b = document.getElementById("click1").value;
+
+        alert(a * b);
+      }
+      function Bol() {
+        var a = document.getElementById("click").value;
+        var b = document.getElementById("click1").value;
+
+        alert(a / b);
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="a" type="text" />
+    <input id="b" type="text" />
+    <button onclick="vur()">Hesabla</button>
+    <select name="" id="calculate">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+
+    <script>
+      function vur() {
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+        var s = document.getElementById("calculate").value;
+
+        if (s == "+") {
+          alert(a + b);
+        }
+        if (s == "-") {
+          alert(a - b);
+        }
+        if (s == "*") {
+          alert(a * b);
+        }
+        if (s == "/") {
+          alert(a / b);
+        }
+      }
+    </script>
+  </body>
+</html>
+------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="a" type="text" />
+    <input id="b" type="text" />
+    <button onclick="vur()">Hesabla</button>
+    <select name="" id="calculate">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+
+    <script>
+      function vur() {
+        var a = document.getElementById("a").value*1;
+        var b = document.getElementById("b").value*1;
+        var s = document.getElementById("calculate").value;
+
+        if (s == "+") {
+          alert(a + b);
+        }
+        if (s == "-") {
+          alert(a - b);
+        }
+        if (s == "*") {
+          alert(a * b);
+        }
+        if (s == "/") {
+          alert(a / b);
+        }
+      }
+    </script>
+  </body>
+</html>
+-----------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="a" type="text">
+    <button onclick="f()"> </button>
+
+
+    <script>
+   function f(){
+var a=document.getElementById("a").value;
+alert(eval(a));
+   }
+
+
+    </script>
+</body>
+</html>
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="a" type="text" placeholder="x" />
+    <input id="b" type="text" placeholder="y" />
+    <input id="c" type="text" placeholder="z" />
+    <button onclick="vur()">Hesabla</button>
+
+    <script>
+      function vur() {
+        var x = document.getElementById("a").value * 1;
+        var y = document.getElementById("b").value * 1;
+        var z = document.getElementById("c").value * 1;
+
+        if ((z = 1)) {
+          alert(x + y);
+        } else if ((z = 2)) {
+          alert(x - y);
+        } else if ((z = 3)) {
+          alert(x * y);
+        } else if ((z = 4)) {
+          alert(x / y);
+        }
+      }
+    </script>
+  </body>
+</html>

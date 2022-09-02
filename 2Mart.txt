@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="click"></div>
+    <button onclick="f()"></button>
+
+    <script>
+      function f() {
+        document.getElementById("click").innerHTML = "<button></button>";
+      }
+    </script>
+  </body>
+</html>
+-----------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="click"></div>
+    <button onclick="f()"></button>
+
+    <script>
+      function f() {
+        document.getElementById("click").innerHTML += "<button></button>";
+      }
+    </script>
+  </body>
+</html>
+------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="click"></div>
+    <button onclick="f()"></button>
+
+    <script>
+      function f() {
+        document.getElementById("click").innerHTML +=
+          "<button onclick='f()'></button>";
+      }
+    </script>
+  </body>
+</html>
+---------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="click"></div>
+    <button onclick="f()" onclick="f(this)">Hello</button>
+
+    <script>
+      function f() {
+        document.getElementById("click").innerHTML +=
+          "<button onclick='f2(this)'>Salam</button>";
+      }
+      // function f2() {
+      //   document.getElementById("click").innerHTML +=
+      //     "<button ondbclick='f()'></button>".remove;
+      // }
+      function f2(x) {
+        x.remove();
+      }
+    </script>
+  </body>
+</html>
+----------------------------------
+/head>
+  <style>
+    #a {
+      width: 250px;
+      height: 250px;
+      background-color: green;
+    }
+  </style>
+  <body>
+    <div
+      onclick="f()"
+      style="
+        background-color: red;
+        color: white;
+        width: 200px;
+        height: 200px;
+        font-size: 50px;
+      "
+    >
+      +
+    </div>
+    <div></div>
+    <script>
+      function f() {
+        document.body.innerHTML += "<div id='a'>Z</div>";
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #a {
+      width: 250px;
+      height: 250px;
+      background-color: green;
+    }
+  </style>
+  <body>
+    <div
+      onclick="f()"
+      style="
+        background-color: red;
+        color: white;
+        width: 200px;
+        height: 200px;
+        font-size: 50px;
+      "
+    >
+      +
+    </div>
+    <div></div>
+    <script>
+      function f() {
+        document.body.innerHTML +=
+          "<h1 id='a'><span  onclick='sil(this)' >Z</span></h1>";
+      }
+      function sil(x) {
+        x.parentElement.remove();
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+

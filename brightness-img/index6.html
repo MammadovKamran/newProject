@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="x" type="text" placeholder="x" />
+    <input id="y" type="text" placeholder="y" />
+    <input id="z" type="text" placeholder="z" />
+    <input id="a" type="text" placeholder="a" />
+    <button onclick="F('x','y','z','a')">En boyuyunu tap</button>
+
+    <script>
+      function F(x, y, z, a) {
+        var x = document.getElementById(x).value * 1;
+        var y = document.getElementById(y).value * 1;
+        var z = document.getElementById(z).value * 1;
+        var a = document.getElementById(a).value * 1;
+        alert(Math.max(x, y, z, a));
+      }
+    </script>
+  </body>
+</html>

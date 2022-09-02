@@ -1,0 +1,25 @@
+@media only screen and (min-width: 576px) {
+  #section-1 {
+    padding-left: 10%;
+  }
+  .about-container {
+    width: 70%;
+  }
+  .contact-section {
+    margin-left: 30px;
+  }
+  .contact-container h5 {
+    width: 75%;
+  }
+  #blog-header {
+    height: 75vh;
+  }
+  #blog-header > h1 {
+    width: 60%;
+    font-weight: 800;
+  }
+  .blog-container {
+    width: 68%;
+    margin: 50px auto;
+  }
+}

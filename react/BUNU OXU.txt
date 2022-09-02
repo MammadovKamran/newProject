@@ -1,0 +1,13 @@
+Faylin yaddasi 300mb dan cox oldugunnan  node modules qovlugunu silmisem icinnen fayli acanda en birinci terminala gir ve
+
+cd my-app komandasi
+
+ ile qovluga daxil ol ve 
+
+ npm install
+
+  komandasini vurki eksik olan file leri yuklesin ve onnan sonra
+
+  npm start 
+  
+  komandasini islet falyli chromede acsin diye 

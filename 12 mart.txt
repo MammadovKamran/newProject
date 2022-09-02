@@ -1,0 +1,122 @@
+  <body>
+    <div class="a">
+      <div class="saniye"></div>
+      <div class="deqiqe"></div>
+      <div class="saat"></div>
+    </div>
+
+    <style>
+      .a {
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        border-radius: 50%;
+        position: relative;
+      }
+      .saniye {
+        animation: hereket 60s ease;
+        transform-origin: bottom;
+        width: 10px;
+        height: 200px;
+        left: 200px;
+
+        position: absolute;
+        background-color: red;
+      }
+
+      .deqiqe {
+        animation: hereket 3600s linear;
+        transform-origin: bottom;
+        width: 10px;
+        height: 200px;
+        left: 200px;
+
+        position: absolute;
+        background-color: green;
+      }
+      .saat {
+        animation: hereket 42200s linear;
+        transform-origin: bottom;
+        width: 10px;
+        height: 200px;
+        left: 200px;
+
+        position: absolute;
+        background-color: yellow;
+      }
+      @keyframes hereket {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </body>
+-------------------------------------------------------------------
+ <body>
+    <script>
+      for (a = 0; a < 5; a++) document.write("Salam<br>");
+    </script>
+  </body>
+--------------------------------------------------------
+   <script>
+      var cem = 0;
+
+      for (a = 0; a <= 5; a++) {
+        cem = cem + a;
+      }
+      alert(cem);
+    </script>
+---------------------------------------------------------------
+  <body>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+
+    <script>
+      for (a = 0; a <= 5; a++) {
+        document.getElementsByTagName("h1")[a].style.color = "red";
+      }
+    </script>
+  </body>
+----------------------------------------------------
+  <body>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+    <h1>Salam</h1>
+
+    <script>
+      for (a = 0; a <= 5; a++) {
+        if (a % 2 == 0) {
+          document.getElementsByTagName("h1")[a].style.color = "red";
+        }
+      }
+    </script>
+  </body>
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

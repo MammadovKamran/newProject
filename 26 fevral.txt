@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function f() {
+      alert(1);
+    }
+  </script>
+</html>
+--------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="select" onchange="f()">
+      <option>Red</option>
+      <option>Green</option>
+      <option>Blue</option>
+    </select>
+
+    <script>
+      function f() {
+        var a = document.getElementById("select").value;
+        alert(a);
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="select" onchange="f()">
+      <option>Red</option>
+      <option>Green</option>
+      <option>Blue</option>
+    </select>
+
+    <script>
+      function f() {
+        var a = document.getElementById("select").value;
+        document.body.style.backgroundColor = a;
+        alert(a);
+      }
+    </script>
+  </body>
+</html>
+------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="color" id="select" onchange="f()">
+     
+  </input>
+
+    <script>
+      function f() {
+        var a = document.getElementById("select").value;
+        document.body.style.backgroundColor = a;
+        alert(a);
+      }
+    </script>
+  </body>
+</html>
+-----------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="select" oninput="f()" />
+
+    <script>
+      function f() {
+        var a = document.getElementById("select").value;
+        document.body.style.backgroundColor = a;
+      }
+    </script>
+  </body>
+</html>
+------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="select" oninput="f()" />
+    <h1 id="tercume"></h1>
+
+    <script>
+      function f() {
+        var a = document.getElementById("select").value;
+
+        if (a == "apple") {
+          document.getElementById("tercume").innerHTML = "alma";
+        } else if (a == "hello") {
+          document.getElementById("tercume").innerHTML = "salam";
+        } else {
+          document.getElementById("tercume").innerHTML = a;
+        }
+      }
+    </script>
+  </body>
+</html>
+----------------------------------------------
+<htlml>
+<head>
+</head>
+  <body>
+    <script>
+      function cap_et(x) {
+        alert(x);
+      }
+
+      cap_et("Salam");
+    </script>
+  </body>
+</html>
+---------------------------------------------------
+ <body>
+    <script>
+      function cap_et(x) {
+     
+      }
+      var a = prompt();
+      cap_et("a");
+    </script>
+  </body>
+</html>
+-------------------------------------
+<script>
+      function cap_et(x) {
+        alert(x * x);
+      }
+      var a = prompt();
+      cap_et(a);
+    </script>
+  </body>
+</html>
+-------------------------------------------------------
+<script>
+      function change_color(x, y) {
+        alert(x * y);
+      }
+
+      cap_et(5, 4);
+    </script>
+----------------------------------
+<body>
+    <script>
+      function capet(x, y) {
+        alert(x * y);
+      }
+
+      capet(prompt(), prompt());
+    </script>
+  </body>
+</html>
+-------------------------------------------
+  <script>
+      function topla(x, y) {
+        alert(x + y);
+      }
+      function cix(x, y) {
+        alert(x - y);
+      }
+      topla(5, 4);
+
+      capet(prompt(), prompt());
+    </script>
+  </body>
+</html>
+-----------------------------------------
+<body>
+    <script>
+      function topla(x, y) {
+        alert(x + y);
+      }
+      function cix(x, y) {
+        alert(x - y);
+      }
+      cix(5, 4);
+
+      capet(prompt(), prompt());
+    </script>
+  </body>
+------------------------------------------
+<body>
+    <h1 id="h1">salam</h1>
+    <button onclick="gizlet('h1')">Gizlet</button>
+    <script>
+      function gizlet(x) {
+        document.getElementById(x).style.display = "none";
+      }
+    </script>
+  </body>
+</html>
+---------------------------------------------------
+ <body>
+    <h1 id="h1">salam</h1>
+    <button onclick="show('h1')">Show</button>
+    <button onclick="hide('h1')">Hide</button>
+    <script>
+      function hide(x) {
+        document.getElementById(x).style.display = "none";
+      }
+      function show(x) {
+        document.getElementById(x).style.display = "block";
+      }
+    </script>
+  </body>
+--------------------------------------------------------------
+  <body>
+    <h1 id="h1">salam</h1>
+    <button onclick="change_color('red')">Show</button>
+    <button onclick="change_color('blue')">Show</button>
+    <button onclick="change_color('green')">Show</button>
+    <script>
+      function change_color(x) {
+        document.getElementById("h1").style.color = x;
+      }
+    </script>
+  </body>
+---------------------------------------------------------------------
+<body>
+    <h1 id="h1">salam</h1>
+    <button onclick="change_color('red')">Show</button>
+    <button onclick="change_color('blue')">Show</button>
+    <button onclick="change_color('green')">Show</button>
+    <script>
+      function change_color(x) {
+        document.getElementById("h1").style.color = x;
+      }
+      change_color("yellow");
+    </script>
+  </body>
+---------------------------------------------------------------
+  <body>
+    <script>
+      tercume("apple");
+      function tercume(x) {
+        if (x == "apple") {
+          alert("alma");
+        }
+        if (x == "hello") {
+          alert("salam");
+        }
+      }
+    </script>
+  </body>
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+---------------------------------
+
+
+
+
+
+
+
+
+
+
